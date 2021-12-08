@@ -6,8 +6,6 @@ services:
         image: nikolaik/python-nodejs:python3.5-nodejs10-alpine
         restart: always
         env_file: .env
-        ports:
-            - 3000:3000
         volumes:
             - ./:/src
         working_dir: /src
